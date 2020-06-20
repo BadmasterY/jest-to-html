@@ -1,0 +1,272 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 4,
+    "numPassedTestSuites": 0,
+    "numPassedTests": 18,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 22,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1592657360089,
+    "success": false,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window constructor",
+                    "location": null,
+                    "status": "passed",
+                    "title": "constructor"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window property get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "property get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window type get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "type get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window size set get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "size set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window position set get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "position set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m0.5\u001b[39m\nReceived: \u001b[31m-763148288\u001b[39m\n\nExpected precision:    2\nExpected difference: < \u001b[32m0.005\u001b[39m\nReceived difference:   \u001b[31m763148288.5\u001b[39m\n    at Object.<anonymous> (/data/data/irisjscts/jest/Window.test.js:82:24)\n    at Object.asyncJestTest (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:47:12\n    at new Promise (<anonymous>)\n    at mapper (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:30:19)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:77:41\n    at processTicksAndRejections (internal/process/task_queues.js:85:5)"
+                    ],
+                    "fullName": "Window rotation set get",
+                    "location": null,
+                    "status": "failed",
+                    "title": "rotation set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window enable set get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "enable set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window visible set get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "visible set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window dpm get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "dpm get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window renderType get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "renderType get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window root get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "root get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\nError name:    \u001b[31m\"TypeError\"\u001b[39m\nError message: \u001b[31m\"this.root.children is not a function\"\u001b[39m\n\n    \u001b[0m \u001b[90m 151 | \u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 152 | \u001b[39m    it(\u001b[32m'children get appendChild'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {       \u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 153 | \u001b[39m        \u001b[0m\n    \u001b[0m \u001b[90m     | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 154 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\n    \u001b[0m \u001b[90m 155 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\n    \u001b[0m \u001b[90m 156 | \u001b[39m                type\u001b[33m:\u001b[39m \u001b[32m'3d'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\n      \u001b[2mat Window.get children [as children] (\u001b[22m../node_modules/window/Window.js\u001b[2m:301:1)\u001b[22m\n      \u001b[2mat \u001b[22mWindow.test.js\u001b[2m:153:24\u001b[22m\n      \u001b[2mat Object.<anonymous> (\u001b[22mWindow.test.js\u001b[2m:155:12)\u001b[22m\n    at Object.<anonymous> (/data/data/irisjscts/jest/Window.test.js:155:12)\n    at Object.asyncJestTest (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:47:12\n    at new Promise (<anonymous>)\n    at mapper (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:30:19)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:77:41\n    at processTicksAndRejections (internal/process/task_queues.js:85:5)"
+                    ],
+                    "fullName": "Window children get appendChild",
+                    "location": null,
+                    "status": "failed",
+                    "title": "children get appendChild"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window removeChild",
+                    "location": null,
+                    "status": "passed",
+                    "title": "removeChild"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window getElementById",
+                    "location": null,
+                    "status": "passed",
+                    "title": "getElementById"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window fullscreenProperty set get",
+                    "location": null,
+                    "status": "passed",
+                    "title": "fullscreenProperty set get"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\nError name:    \u001b[31m\"Error\"\u001b[39m\nError message: \u001b[31m\"refChild is not a child of this object\"\u001b[39m\n\n    \u001b[0m \u001b[90m 213 | \u001b[39m        full \u001b[33m=\u001b[39m w\u001b[33m.\u001b[39mfullscreenProperty\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 214 | \u001b[39m        expect(full\u001b[33m.\u001b[39mfollow)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\n    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m     | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    \u001b[0m \u001b[90m 216 | \u001b[39m    it(\u001b[32m'insertBefore Method'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n    \u001b[0m \u001b[90m 217 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\n    \u001b[0m \u001b[90m 218 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\n\n      \u001b[2mat UIRoot.insertBefore (\u001b[22m../node_modules/ui/UIObject.js\u001b[2m:382:1)\u001b[22m\n      \u001b[2mat Window.insertBefore (\u001b[22m../node_modules/window/Window.js\u001b[2m:385:1)\u001b[22m\n      \u001b[2mat \u001b[22mWindow.test.js\u001b[2m:215:9\u001b[22m\n      \u001b[2mat Object.<anonymous> (\u001b[22mWindow.test.js\u001b[2m:216:12)\u001b[22m\n    at Object.<anonymous> (/data/data/irisjscts/jest/Window.test.js:216:12)\n    at Object.asyncJestTest (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:47:12\n    at new Promise (<anonymous>)\n    at mapper (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:30:19)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:77:41\n    at processTicksAndRejections (internal/process/task_queues.js:85:5)"
+                    ],
+                    "fullName": "Window insertBefore Method",
+                    "location": null,
+                    "status": "failed",
+                    "title": "insertBefore Method"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window replaceChild Method",
+                    "location": null,
+                    "status": "passed",
+                    "title": "replaceChild Method"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window getChildrenRecursive Method",
+                    "location": null,
+                    "status": "passed",
+                    "title": "getChildrenRecursive Method"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window destroy Method",
+                    "location": null,
+                    "status": "passed",
+                    "title": "destroy Method"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [
+                        "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\nThrown value: \u001b[31m\"XRWindow_setFullscreen error with code: -1\"\u001b[39m\n\n    at Object.<anonymous> (/data/data/irisjscts/jest/Window.test.js:266:12)\n    at Object.asyncJestTest (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:100:37)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:47:12\n    at new Promise (<anonymous>)\n    at mapper (/data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:30:19)\n    at /data/data/irisjscts/jest/node_modules/jest-jasmine2/build/queueRunner.js:77:41\n    at processTicksAndRejections (internal/process/task_queues.js:85:5)"
+                    ],
+                    "fullName": "Window leaveFullscreen Method",
+                    "location": null,
+                    "status": "failed",
+                    "title": "leaveFullscreen Method"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window locationChange Event",
+                    "location": null,
+                    "status": "passed",
+                    "title": "locationChange Event"
+                },
+                {
+                    "ancestorTitles": [
+                        "Window"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "Window fullscreenChange Event",
+                    "location": null,
+                    "status": "passed",
+                    "title": "fullscreenChange Event"
+                }
+            ],
+            "endTime": 1592657367126,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mWindow › rotation set get\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected: \u001b[32m0.5\u001b[39m\n    Received: \u001b[31m-763148288\u001b[39m\n\n    Expected precision:    2\n    Expected difference: < \u001b[32m0.005\u001b[39m\n    Received difference:   \u001b[31m763148288.5\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 80 | \u001b[39m            size\u001b[33m:\u001b[39m [\u001b[35m5\u001b[39m\u001b[33m,\u001b[39m \u001b[35m6\u001b[39m\u001b[33m,\u001b[39m \u001b[35m7\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 81 | \u001b[39m            position\u001b[33m:\u001b[39m [\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2\u001b[39m\u001b[33m,\u001b[39m \u001b[33m-\u001b[39m\u001b[35m15\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 82 | \u001b[39m            rotation\u001b[33m:\u001b[39m [\u001b[35m0.5\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0.2\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0.3\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    | \u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 83 | \u001b[39m        })\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 84 | \u001b[39m        let rotation \u001b[33m=\u001b[39m w\u001b[33m.\u001b[39mrotation\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 85 | \u001b[39m        expect(rotation\u001b[33m.\u001b[39mx)\u001b[33m.\u001b[39mtoBeCloseTo(\u001b[35m0.5\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mWindow.test.js\u001b[39m\u001b[0m\u001b[2m:82:24)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mWindow › children get appendChild\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\n    Error name:    \u001b[31m\"TypeError\"\u001b[39m\n    Error message: \u001b[31m\"this.root.children is not a function\"\u001b[39m\n\n        \u001b[0m \u001b[90m 151 | \u001b[39m\u001b[0m\n        \u001b[0m \u001b[90m 152 | \u001b[39m    it(\u001b[32m'children get appendChild'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {       \u001b[0m\n        \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 153 | \u001b[39m        \u001b[0m\n        \u001b[0m \u001b[90m     | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n        \u001b[0m \u001b[90m 154 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\n        \u001b[0m \u001b[90m 155 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\n        \u001b[0m \u001b[90m 156 | \u001b[39m                type\u001b[33m:\u001b[39m \u001b[32m'3d'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\n          \u001b[2mat Window.get children [as children] (\u001b[22m../node_modules/window/Window.js\u001b[2m:301:1)\u001b[22m\n          \u001b[2mat \u001b[22mWindow.test.js\u001b[2m:153:24\u001b[22m\n          \u001b[2mat Object.<anonymous> (\u001b[22mWindow.test.js\u001b[2m:155:12)\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 153 | \u001b[39m        \u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 154 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 155 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 156 | \u001b[39m                type\u001b[33m:\u001b[39m \u001b[32m'3d'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 157 | \u001b[39m                size\u001b[33m:\u001b[39m [\u001b[35m10\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 158 | \u001b[39m                position\u001b[33m:\u001b[39m [\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[33m-\u001b[39m\u001b[35m15\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mWindow.test.js\u001b[39m\u001b[0m\u001b[2m:155:12)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mWindow › insertBefore Method\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\n    Error name:    \u001b[31m\"Error\"\u001b[39m\n    Error message: \u001b[31m\"refChild is not a child of this object\"\u001b[39m\n\n        \u001b[0m \u001b[90m 213 | \u001b[39m        full \u001b[33m=\u001b[39m w\u001b[33m.\u001b[39mfullscreenProperty\u001b[33m;\u001b[39m\u001b[0m\n        \u001b[0m \u001b[90m 214 | \u001b[39m        expect(full\u001b[33m.\u001b[39mfollow)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\n        \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 215 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\n        \u001b[0m \u001b[90m     | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n        \u001b[0m \u001b[90m 216 | \u001b[39m    it(\u001b[32m'insertBefore Method'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n        \u001b[0m \u001b[90m 217 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\n        \u001b[0m \u001b[90m 218 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\n\n          \u001b[2mat UIRoot.insertBefore (\u001b[22m../node_modules/ui/UIObject.js\u001b[2m:382:1)\u001b[22m\n          \u001b[2mat Window.insertBefore (\u001b[22m../node_modules/window/Window.js\u001b[2m:385:1)\u001b[22m\n          \u001b[2mat \u001b[22mWindow.test.js\u001b[2m:215:9\u001b[22m\n          \u001b[2mat Object.<anonymous> (\u001b[22mWindow.test.js\u001b[2m:216:12)\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 214 | \u001b[39m        expect(full\u001b[33m.\u001b[39mfollow)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m \u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 215 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 216 | \u001b[39m    it(\u001b[32m'insertBefore Method'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 217 | \u001b[39m        expect(()\u001b[33m=>\u001b[39m{\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 218 | \u001b[39m            let w \u001b[33m=\u001b[39m app\u001b[33m.\u001b[39mcreateWindow({\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 219 | \u001b[39m                type\u001b[33m:\u001b[39m \u001b[32m'3d'\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mWindow.test.js\u001b[39m\u001b[0m\u001b[2m:216:12)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mWindow › leaveFullscreen Method\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoThrow\u001b[2m()\u001b[22m\n\n    Thrown value: \u001b[31m\"XRWindow_setFullscreen error with code: -1\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 264 | \u001b[39m                size\u001b[33m:\u001b[39m [\u001b[35m10\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 265 | \u001b[39m                position\u001b[33m:\u001b[39m [\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[33m-\u001b[39m\u001b[35m15\u001b[39m]\u001b[33m,\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 266 | \u001b[39m            })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m     | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 267 | \u001b[39m            w\u001b[33m.\u001b[39mdestroy()\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 268 | \u001b[39m        })\u001b[33m.\u001b[39mnot\u001b[33m.\u001b[39mtoThrow()\u001b[33m;\u001b[39m \u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 269 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[22m\u001b[2m\u001b[0m\u001b[36mWindow.test.js\u001b[39m\u001b[0m\u001b[2m:266:12)\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "/data/data/irisjscts/jest/Window.test.js",
+            "startTime": 1592657360205,
+            "status": "failed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}

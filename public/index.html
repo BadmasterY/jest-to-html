@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    p {
+        padding: 20px 30px;
+        margin: 0;
+    }
+
+    .success p {
+        background-color: #19be6b;
+    }
+
+    .failed p {
+        background-color: #ed4014;
+    }
+
+    .failed .console {
+        background-color: #eee;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jest to html</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+
+        </ul>
+    </div>
+</body>
+<script>
+    window.onload = function () {
+        const ul = document.querySelector('ul');
+
+        fetch('/result', {
+            headers: {
+                'content-type': 'application/json'
+            },
+        }).then(data => {
+            return data.json();
+        }).then(json => {
+            for (const key in json) {
+                const li = document.createElement('li');
+                if (json[key].success) {
+                    li.className = 'success';
+                    li.innerHTML = `<h2>${key}:</h2><p>passing!</p>`;
+                } else {
+                    li.className = 'failed';
+                    li.innerHTML = `<h2>${key}:</h2><p>failed!</p>`;
+
+                    const results = json[key].testResults;
+
+
+                    for (const resultKey in results) {
+                        const msg = results[resultKey].message;
+
+                        console.log(results[resultKey].name);
+                        console.log(msg);
+
+                        li.innerHTML += `<h3>${results[resultKey].name}</h3><p>status: ${results[resultKey].status}</p><p class="console">${msg}</p>`
+                    }
+                }
+
+                ul.appendChild(li);
+
+            }
+            // console.log(data);
+        })
+    }
+</script>
+
+</html>

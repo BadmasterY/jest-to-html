@@ -1,0 +1,21 @@
+{
+  "name": "jest-to-html",
+  "version": "0.1.0",
+  "description": "Output jest results to HTML",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch package.json --watch index.js --watch testResult --watch src --watch public --watch utils index.js"
+  },
+  "keywords": [
+    "jest",
+    "html"
+  ],
+  "author": "Mr.",
+  "license": "MIT",
+  "dependencies": {
+    "strip-ansi": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

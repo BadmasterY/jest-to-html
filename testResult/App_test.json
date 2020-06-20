@@ -1,0 +1,244 @@
+{
+    "numFailedTestSuites": 0,
+    "numFailedTests": 0,
+    "numPassedTestSuites": 1,
+    "numPassedTests": 20,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 20,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1592657297914,
+    "success": true,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "app.createWindow"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.createWindow 如果没有传 type 参数，或者传入的参数不是 \"2d\", \"3d\", 应该抛出异常",
+                    "location": null,
+                    "status": "passed",
+                    "title": "如果没有传 type 参数，或者传入的参数不是 \"2d\", \"3d\", 应该抛出异常"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.destroyWindow"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.destroyWindow 能销毁传入的 window",
+                    "location": null,
+                    "status": "passed",
+                    "title": "能销毁传入的 window"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.destroyAllWindows"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.destroyAllWindows 能销毁传入的 window",
+                    "location": null,
+                    "status": "passed",
+                    "title": "能销毁传入的 window"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.getWindowById"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.getWindowById 应该返回之前创建过的 window 的  id ",
+                    "location": null,
+                    "status": "passed",
+                    "title": "应该返回之前创建过的 window 的  id "
+                },
+                {
+                    "ancestorTitles": [
+                        "app.findWindowById"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.findWindowById 应该返回之前创建过的 window 的  id ",
+                    "location": null,
+                    "status": "passed",
+                    "title": "应该返回之前创建过的 window 的  id "
+                },
+                {
+                    "ancestorTitles": [
+                        "app.windows"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.windows 是一个数组",
+                    "location": null,
+                    "status": "passed",
+                    "title": "是一个数组"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.windows"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.windows 能返回所有创建的 window",
+                    "location": null,
+                    "status": "passed",
+                    "title": "能返回所有创建的 window"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.createElement"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.createElement 标签错误应该抛出异常",
+                    "location": null,
+                    "status": "passed",
+                    "title": "标签错误应该抛出异常"
+                },
+                {
+                    "ancestorTitles": [
+                        "channel"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "channel app.joinChannel 之后 可以 收到 app.broadcastMessage 发送的消息",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.joinChannel 之后 可以 收到 app.broadcastMessage 发送的消息"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getPackageManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getPackageManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getBattery 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getBattery 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getAudioManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getAudioManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getMediaManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getMediaManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getDisplay 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getDisplay 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getWifiManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getWifiManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getConnectivityManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getConnectivityManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getScreenCapturer 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getScreenCapturer 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getInputManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getInputManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getNotificationManager 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getNotificationManager 应该返回 object"
+                },
+                {
+                    "ancestorTitles": [
+                        "app.<getSingleton> 测试"
+                    ],
+                    "failureMessages": [],
+                    "fullName": "app.<getSingleton> 测试 app.getSystem 应该返回 object",
+                    "location": null,
+                    "status": "passed",
+                    "title": "app.getSystem 应该返回 object"
+                }
+            ],
+            "endTime": 1592657300938,
+            "message": "",
+            "name": "/data/data/irisjscts/jest/App.test.js",
+            "startTime": 1592657298088,
+            "status": "passed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}
