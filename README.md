@@ -3,8 +3,6 @@
 
 需要测试的文件放置在 `testResult` 文件夹下。
 
-格式化信息查看 `console`。
-
 ### 启动
 ```
 npm install

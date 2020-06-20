@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    body,html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100%;
+    }
+    #app {
+        width: 100%;
+        min-width: 300px;
+        padding: 10px 20%;
+        box-sizing: border-box;
+    }
+    ul {
+        margin: 0;
+    }
     p {
         padding: 20px 30px;
         margin: 0;
@@ -15,7 +30,19 @@
     }
 
     .failed .console {
-        background-color: #eee;
+        display: block;
+        padding: 0.5em;
+        font-size: 12px;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        border-radius: 0.25rem;
+        background-color: rgba(206, 17, 38, 0.05);
+        font-family: Consolas, Menlo, monospace;
+    }
+    .failed .code-error {
+        background-color: #fbb9a9;
     }
 </style>
 
@@ -58,10 +85,7 @@
                     for (const resultKey in results) {
                         const msg = results[resultKey].message;
 
-                        console.log(results[resultKey].name);
-                        console.log(msg);
-
-                        li.innerHTML += `<h3>${results[resultKey].name}</h3><p>status: ${results[resultKey].status}</p><p class="console">${msg}</p>`
+                        li.innerHTML += `<h3>${results[resultKey].name}</h3><p class="code-error">status: ${results[resultKey].status}</p><code class="console">${msg}</code>`
                     }
                 }
 
