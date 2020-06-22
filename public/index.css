@@ -83,6 +83,11 @@ table .passed {
     color           : #19be6b;
 }
 
+table .pending {
+    background-color: rgba(255, 153, 0, .1);
+    color           : #f90;
+}
+
 table .failed {
     background-color: rgba(237, 64, 20, .1);
     color           : #ed4014;
