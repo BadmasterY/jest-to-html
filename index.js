@@ -13,6 +13,7 @@ server.listen(4000, function () {
 server.on('request', function (req, res) {
     const urls = url.parse(req.url, true);
     const filePathname = path.join(__dirname, '/public/index.html');
+    const cssPathName = path.join(__dirname, '/public/index.css');
 
     if (urls.path === '/') {
         fs.readFile(filePathname, (err, data) => {
@@ -41,7 +42,24 @@ server.on('request', function (req, res) {
             }
 
             // console.log(filesJson);
+            res.writeHead(200, {'Content-Type': 'application/json; charset=utf-8'});
             res.end(JSON.stringify(filesJson));
+        });
+    } else if(urls.path === '/index.css'){
+        fs.readFile(cssPathName, (err, data) => {
+            if (err) {
+                res.writeHead(404, {
+                    "Context-type": "text/plain"
+                });
+                res.write('404');
+                res.end();
+            } else {
+                res.writeHead(200, {
+                    "Context-type": "text/plain"
+                });
+                res.write(data);
+                res.end();
+            }
         });
     }else {
         res.end();

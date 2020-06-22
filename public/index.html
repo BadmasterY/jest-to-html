@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    body,html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        min-height: 100%;
-    }
-    #app {
-        width: 100%;
-        min-width: 300px;
-        padding: 10px 20%;
-        box-sizing: border-box;
-    }
-    ul {
-        margin: 0;
-    }
-    p {
-        padding: 20px 30px;
-        margin: 0;
-    }
-
-    .success p {
-        background-color: #19be6b;
-    }
-
-    .failed p {
-        background-color: #ed4014;
-    }
-
-    .failed .console {
-        display: block;
-        padding: 0.5em;
-        font-size: 12px;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        border-radius: 0.25rem;
-        background-color: rgba(206, 17, 38, 0.05);
-        font-family: Consolas, Menlo, monospace;
-    }
-    .failed .code-error {
-        background-color: #fbb9a9;
-    }
-</style>
+<link rel="stylesheet" href="./index.css">
 
 <head>
     <meta charset="UTF-8">
@@ -72,27 +28,38 @@
         }).then(json => {
             for (const key in json) {
                 const li = document.createElement('li');
+                let passedOrFailed = '';
                 if (json[key].success) {
                     li.className = 'success';
-                    li.innerHTML = `<h2>${key}:</h2><p>passing!</p>`;
                 } else {
                     li.className = 'failed';
-                    li.innerHTML = `<h2>${key}:</h2><p>failed!</p>`;
+                }
+                li.innerHTML = `<h2>${key}(${json[key].total}):</h2>`;
+                li.innerHTML += `<ul class="header-ul"><li class="passed">${json[key].passed} passed</li><li class="pending">${json[key].pending} pending</li><li class="failed">${json[key].filed} failed</li></ul>`;
 
-                    const results = json[key].testResults;
+                const results = json[key].testResults;
 
 
-                    for (const resultKey in results) {
-                        const msg = results[resultKey].message;
+                for (const resultKey in results) {
+                    const msg = results[resultKey].message;
 
-                        li.innerHTML += `<h3>${results[resultKey].name}</h3><p class="code-error">status: ${results[resultKey].status}</p><code class="console">${msg}</code>`
+                    li.innerHTML += `<h3 class="title">${results[resultKey].name}<span class="time">${results[resultKey].time/1000}s</span></h3><code class="console">${msg}</code>`;
+
+                    let innerHtml = '';
+                    const testResults = results[resultKey].results;
+                    console.log(testResults);
+                    for(let i = 0; i < testResults.length; i++) {
+                        innerHtml += `<tr class="${testResults[i].status}"><td class="inner-title"><p>${testResults[i].titles.join(' > ')}</p></td><td class="inner-text"><p>${testResults[i].title}</p></td><td class="inner-status"><p>${testResults[i].status}</p></td></tr>`;
+                        if(testResults[i].status === 'failed') {
+                            innerHtml += `<tr><td colspan="3"><code class="console">${testResults[i].msg}</code></td></tr>`;
+                        }
                     }
+
+                    li.innerHTML += `<table width="100%" cellspacing="0">${innerHtml}</table>`;
                 }
 
                 ul.appendChild(li);
-
             }
-            // console.log(data);
         })
     }
 </script>

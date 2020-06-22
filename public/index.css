@@ -1,0 +1,104 @@
+body,
+html {
+    margin    : 0;
+    padding   : 0;
+    width     : 100%;
+    min-height: 100%;
+}
+
+#app {
+    width     : 100%;
+    min-width : 300px;
+    padding   : 10px 20%;
+    box-sizing: border-box;
+}
+
+.failed h2 {
+    color: #ed4014;
+}
+
+.success h2 {
+    color: #19be6b;
+}
+
+.title {
+    margin          : 10px 0 0 0;
+    padding         : 20px 30px;
+    background-color: #eee;
+    box-sizing      : border-box;
+    font-size       : 14px;
+    color           : rgba(0, 0, 0, .5);
+    font-weight     : 400;
+    border-radius   : 3px;
+}
+
+.title .time {
+    float: right;
+    color: #000;
+}
+
+.header-ul {
+    list-style      : none;
+    padding         : 0;
+    background-color: #f9f9f9;
+    border-radius   : 3px;
+    overflow        : hidden;
+}
+
+.header-ul li {
+    padding    : 3px 0 3px 10px;
+    box-sizing : border-box;
+    border-left: 5px solid;
+    font-size  : 14px;
+}
+
+.header-ul .passed {
+    border-color: #19be6b;
+    color       : #19be6b;
+}
+
+.header-ul .failed {
+    border-color: #ed4014;
+    color       : #ed4014;
+}
+
+.header-ul .pending {
+    border-color: #f90;
+    color       : #f90;
+}
+
+ul {
+    margin    : 0;
+    list-style: none;
+    padding   : 0;
+}
+
+p {
+    padding: 10px;
+    margin : 0;
+}
+
+table .passed {
+    background-color: rgba(25, 190, 107, .1);
+    color           : #19be6b;
+}
+
+table .failed {
+    background-color: rgba(237, 64, 20, .1);
+    color           : #ed4014;
+}
+
+.failed .console {
+    display         : block;
+    padding         : 0.5em;
+    font-size       : 12px;
+    overflow-x      : auto;
+    white-space     : pre-wrap;
+    border-radius   : 0.25rem;
+    background-color: rgba(206, 17, 38, 0.05);
+    font-family     : Consolas, Menlo, monospace;
+}
+
+.failed .code-error {
+    background-color: #fbb9a9;
+}
