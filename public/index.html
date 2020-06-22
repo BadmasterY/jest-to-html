@@ -43,7 +43,7 @@
                 for (const resultKey in results) {
                     const msg = results[resultKey].message;
 
-                    li.innerHTML += `<h3 class="title">${results[resultKey].name}<span class="time">${results[resultKey].time/1000}s</span></h3><code class="console">${msg}</code>`;
+                    li.innerHTML += `<h3 class="title">${results[resultKey].name}<span class="time">${results[resultKey].time/1000}s</span></h3><code class="console" style="margin-bottom: 15px">${msg}</code>`;
 
                     let innerHtml = '';
                     const testResults = results[resultKey].results;
