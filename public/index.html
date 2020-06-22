@@ -49,7 +49,7 @@
                     const testResults = results[resultKey].results;
                     console.log(testResults);
                     for(let i = 0; i < testResults.length; i++) {
-                        innerHtml += `<tr class="${testResults[i].status}"><td class="inner-title"><p>${testResults[i].titles.join(' > ')}</p></td><td class="inner-text"><p>${testResults[i].title}</p></td><td class="inner-status"><p>${testResults[i].status}</p></td></tr>`;
+                        innerHtml += `<tr class="${testResults[i].status}"><td class="inner-title"><p>${testResults[i].titles.join(' > ').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p></td><td class="inner-text"><p>${testResults[i].title.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p></td><td class="inner-status"><p>${testResults[i].status}</p></td></tr>`;
                         if(testResults[i].status === 'failed') {
                             innerHtml += `<tr><td colspan="3"><code class="console">${testResults[i].msg}</code></td></tr>`;
                         }
