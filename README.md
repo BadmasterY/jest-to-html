@@ -8,3 +8,10 @@
 npm install
 npm start
 ```
+
+### 预览
+成功:
+![成功](images/success.jpg)
+
+失败:
+![失败](images/failed.jpg)
