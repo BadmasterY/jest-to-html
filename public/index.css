@@ -76,6 +76,11 @@ ul {
 p {
     padding  : 10px;
     margin   : 0;
+    font-size: 12px;
+}
+
+.inner-title p {
+    font-weight: 700;
     font-size: 14px;
 }
 
